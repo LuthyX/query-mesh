@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+querymesh:
+  sources:
+    - name: postgres
+      type: postgres
+      url: jdbc:postgresql://localhost:5432/querymesh_dev
+      username: postgres
+      password: postgres
+
+    - name: mongodb
+      type: mongodb
+      url: mongodb://localhost:27017
+      database: querymesh_dev
+
+    - name: mysql
+      type: mysql
+      url: jdbc:mysql://localhost:3306/querymesh_dev
+      username: root
+      password: root
